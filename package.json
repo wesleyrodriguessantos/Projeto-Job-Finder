@@ -1,0 +1,35 @@
+{
+  "name": "job_finder",
+  "version": "1.0.0",
+  "description": "Este sistema é um portal para Programadores encontrarem Vagas de Trabalho",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Wes1738/Projeto-Job-Finder.git"
+  },
+  "keywords": [
+    "dev",
+    "jobs",
+    "dev",
+    "oportunity"
+  ],
+  "author": "Wesley Rodrigues <wesleyrodriguessantos99@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Wes1738/Projeto-Job-Finder/issues"
+  },
+  "homepage": "https://github.com/Wes1738/Projeto-Job-Finder#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.0.0",
+    "sequelize": "^6.3.0",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
