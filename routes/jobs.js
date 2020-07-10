@@ -9,11 +9,12 @@ router.get('/test', (req, res) => {
 // Add job via post
 router.post('/add', (req, res) => {
 
-    let {title, salary, company, email, new_job} = req.body;
+    let {title, salary, description, company, email, new_job} = req.body;
 
     // Insert
-    Job.create({
+    job.create({
         title, 
+        description,
         salary, 
         company, 
         email, 
