@@ -19,6 +19,9 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({ defaultLayout: 'main' }));
 app.set('view engine', 'handlebars');
 
+// Static Folder
+app.use(express.static(path.join(__dirname, 'public')));
+
 // db connection
 db.authenticate().then(() => {
     console.log("Conectou ao banco com Sucesso!");
@@ -28,7 +31,7 @@ db.authenticate().then(() => {
 
 // Routes
 app.get('/', (req, res) => {
-    res.send("Está funcionando 3!");
+    res.render('index');
 });
 
 // Jobs Routes
